@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
 
     <!-- Encoding & Viewport -->
@@ -19,7 +19,7 @@
     <meta name="google-site-verification" content="i7D96oTFNPbu-0KuGKG8smJsA8q37jpVWfXrqSqyTGA" />
     
     <!-- Icon -->
-    <link rel="icon" href="img/icon.png">
+    <link rel="icon" href="img/logo.svg">
     
     <!-- Preload | Stylesheet : Style -->
     <link rel="preload" href="css/style.css" as="style">
@@ -32,19 +32,74 @@
     <!-- Title -->
     <title>Marisquería Javi</title>
 
-    <!-- Font Google 'Source Code Pro' -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap">
+
 
 </head>
 <body>
-    <header>
-        <h1>Marisquería Javi</h1>
+    <header class="site-header">
+        <div class="site-header__inner">
+            <a href="index.html">
+                <img src="img/logo.svg" class="logo" alt="Marisquería Javi logo">
+            </a>
+
+            <nav class="site-nav">
+                <ul class="site-nav__list">
+
+                    <a href="#inicio" class="site-nav__item no-text-decoration">
+                        <picture>
+                            <source loading="lazy" srcset="img/Propuesta_03_IconoInicio.webp" type="image/webp" class="site-nav__item__height1">
+                            <img src="img/Propuesta_03_IconoInicio.png" alt="Ícono inicio" class="site-nav__item__height1">
+                        </picture>
+                        Inicio
+                    </a>
+                    
+                    <a href="#menu" class="site-nav__item no-text-decoration">
+                        <picture>
+                            <source loading="lazy" srcset="img/Propuesta_03_IconoMenu.webp" type="image/webp" class="site-nav__item__height1">
+                            <img src="img/Propuesta_03_IconoMenu.png" alt="Ícono menú" class="site-nav__item__height1">
+                        </picture>
+                        Menú
+                    </a>
+                    
+                    <a href="#contacto" class="site-nav__item no-text-decoration">
+                        <picture>
+                            <source loading="lazy" srcset="img/Propuesta_03_IconoContacto.webp" type="image/webp" class="site-nav__item__height2">
+                            <img src="img/Propuesta_03_IconoContacto.webp" alt="Ícono contacto" class="site-nav__item__height2"">
+                        </picture>
+                        Contacto
+                    </a>
+
+                    <a href="#ubicacion" class="site-nav__item no-text-decoration">
+                        <picture>
+                            <source loading="lazy" srcset="img/Propuesta_03_IconoUbicacion.webp" type="image/webp" class="site-nav__item__height1">
+                            <img src="img/Propuesta 03_IconoUbicacion.webp" alt="Ícono ubicación" class="site-nav__item__height1">    
+                        </picture>
+                        Ubicación
+                    </a>
+                </ul>
+            </nav>
+        </div>
+
     </header>
+
+    <section class="image-text-section">
+        <div class="image-text-container">
+            <picture class="image-text-container__center">
+                <source loading="lazy" srcset="img/Propuesta_03_Texto.webp" type="image/webp" class="image-text__texto">
+                <img src="img/Propuesta_03_Texto.webp" alt="Texto descriptivo" class="image-text__texto">
+            </picture>
+            <picture class="image-text-container__center">
+                <source loading="lazy" srcset="img/Propuesta_03_Imagen.webp" type="image/webp" class="site-nav__item__height1">
+                <img src="img/Propuesta 03_Imagen.webp" alt="Imagen descriptiva" class="image-text__imagen">
+            </picture>
+        </div>
+    </section>
+
     <footer>
             <p>© Copyright 2025 Marisquería Javi – Todos los derechos reservados</p>
             <p>Huixquilucan, Estado de México | C. P. 52760</p>
     </footer>
+
 </body>
 </html>
