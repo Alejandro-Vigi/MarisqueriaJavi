@@ -32,6 +32,28 @@ body {
 
 /* Header */
 
+.site-header__inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+.site-nav__list {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.site-nav__item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 2rem;
+}
+
 @media (max-width: 767px) {
 
     .logo {
@@ -40,26 +62,7 @@ body {
     }
     
     .site-header__inner {
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    }
-
-    .site-nav__list {
-        display: flex;
-        flex-direction: column;
-        gap: 3rem;
-        justify-content: center;
-        align-items: center;
-        padding: 0;
-    }
-
-    .site-nav__item {
-        display: flex;
-        align-items: center;
-        gap: 1rem;
-        font-size: 2rem;
     }
 
     .site-nav__item__height1 {
@@ -81,24 +84,14 @@ body {
     }
     
     .site-header__inner {
-    display: flex;
     justify-content: space-around;
-    align-items: center;
     }
 
     .site-nav__list {
-        display: flex;
-        gap: 3rem;
-        justify-content: center;
-        align-items: center;
-        padding: 0;
+        flex-direction: row;
     }
 
     .site-nav__item {
-        display: flex;
-        align-items: center;
-        font-size: 2rem;
-        gap: 1rem;
         font-size: 1.5rem;
     }
 
@@ -119,26 +112,8 @@ body {
         width: 8rem;
         height: 8rem;
     }
-    
-    .site-header__inner {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    }
-
-    .site-nav__list {
-        display: flex;
-        gap: 3rem;
-        justify-content: center;
-        align-items: center;
-        padding: 0;
-    }
 
     .site-nav__item {
-        display: flex;
-        align-items: center;
-        font-size: 2rem;
-        gap: 1rem;
         font-size: 2rem;
     }
 
@@ -160,25 +135,11 @@ body {
         height: 12.9rem;
     }
     
-    .site-header__inner {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    }
-
     .site-nav__list {
-        display: flex;
-        gap: 10rem;
-        justify-content: center;
-        align-items: center;
-        padding: 0;
+        gap: 7rem;
     }
 
     .site-nav__item {
-        display: flex;
-        align-items: center;
-        font-size: 2rem;
-        gap: 1rem;
         font-size: 2.5rem;
     }
 
